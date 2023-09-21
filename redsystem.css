@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('fontes/Inconsolata/Inconsolata.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url('img/matrix.gif');
+    background-repeat: repeat;
+    opacity: 10; /* Ajuste a opacidade conforme necessário */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Coloca o fundo atrás de todo o conteúdo */
+
+    font-family: 'Inconsolata', monospace;
+    color: #00FF00; /* Verde para lembrar a tela verde de código de Matrix */
+    font-size: 16px;
+    text-align: justify;
+    background-color: #3c3c3c;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003366;
+    padding: 20px;
+    text-align: center;
+}
+
+strong {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 35px;
+    margin: 20px;
+    text-align: center;
+    color: #FF0000;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 25px;
+    color: #FF0000;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    color: #FFFF00;
+    font-weight: bold;
+    font-weight: bold;
+}
+
+.container {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: black;
+    border-radius: 0px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+li {
+    padding: 5px;
+}
+
+a {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+ol {
+    margin: 10px auto;
+    padding-left: 35px;
+}
+
+ul {
+    margin: 10px auto;
+    padding: 20px;
+}
+
+footer {
+    background-color: #3c3c3c;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* Estilo para ocultar conteúdo */
+.panel {
+  display: none;
+}
+
+/* Estilo para o cabeçalho (o que o usuário clica) */
+.accordion {
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Estilo quando o cabeçalho está ativo (expandido) */
+.active, .accordion:hover {
+  background-color: #3c3c3c;
+}
+
+/* Estilo para o ícone (seta para cima ou para baixo) */
+.icon {
+    margin-left: 10px;
+}
+
+/* Estilo para o conteúdo expandido */
+.panel {
+  display: none;
+  overflow: hidden;
+}
